@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="2" author="categoria-service">
+
+        <insert tableName="categoria">
+            <column name="nombre" value="Limpiadores"/>
+            <column name="descripcion" value="Gel, espuma y aceites limpiadores faciales"/>
+        </insert>
+
+        <insert tableName="categoria">
+            <column name="nombre" value="Tónicos"/>
+            <column name="descripcion" value="Tónicos hidratantes y equilibrantes para la piel"/>
+        </insert>
+
+        <insert tableName="categoria">
+            <column name="nombre" value="Esencias"/>
+            <column name="descripcion" value="Esencias coreanas para hidratación profunda"/>
+        </insert>
+
+        <insert tableName="categoria">
+            <column name="nombre" value="Sérums"/>
+            <column name="descripcion" value="Sérums con activos concentrados para tratamiento facial"/>
+        </insert>
+
+        <insert tableName="categoria">
+            <column name="nombre" value="Cremas Hidratantes"/>
+            <column name="descripcion" value="Cremas para hidratación y reparación de la piel"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

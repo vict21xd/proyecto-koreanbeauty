@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="dev">
+
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="clientes"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="clientes">
+
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+
+            <column name="nombre" type="VARCHAR(100)"/>
+
+            <column name="correo" type="VARCHAR(100)"/>
+
+            <column name="telefono" type="VARCHAR(20)"/>
+
+            <column name="tipo_piel" type="VARCHAR(50)"/>
+
+        </createTable>
+
+    </changeSet>
+
+</databaseChangeLog>

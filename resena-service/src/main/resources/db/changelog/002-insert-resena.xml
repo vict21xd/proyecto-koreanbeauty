@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="2" author="resena-service">
+
+        <insert tableName="resena">
+            <column name="cliente_id" valueNumeric="1"/>
+            <column name="producto_id" valueNumeric="1"/>
+            <column name="puntuacion" valueNumeric="5"/>
+            <column name="comentario" value="Excelente producto, lo recomiendo totalmente"/>
+            <column name="fecha" valueDate="2026-06-13"/>
+        </insert>
+
+        <insert tableName="resena">
+            <column name="cliente_id" valueNumeric="2"/>
+            <column name="producto_id" valueNumeric="2"/>
+            <column name="puntuacion" valueNumeric="4"/>
+            <column name="comentario" value="Muy bueno, cumple lo prometido"/>
+            <column name="fecha" valueDate="2026-06-13"/>
+        </insert>
+
+        <insert tableName="resena">
+            <column name="cliente_id" valueNumeric="3"/>
+            <column name="producto_id" valueNumeric="3"/>
+            <column name="puntuacion" valueNumeric="3"/>
+            <column name="comentario" value="Regular, podría mejorar"/>
+            <column name="fecha" valueDate="2026-06-13"/>
+        </insert>
+
+        <insert tableName="resena">
+            <column name="cliente_id" valueNumeric="4"/>
+            <column name="producto_id" valueNumeric="4"/>
+            <column name="puntuacion" valueNumeric="2"/>
+            <column name="comentario" value="No me gustó mucho el producto"/>
+            <column name="fecha" valueDate="2026-06-13"/>
+        </insert>
+
+        <insert tableName="resena">
+            <column name="cliente_id" valueNumeric="5"/>
+            <column name="producto_id" valueNumeric="5"/>
+            <column name="puntuacion" valueNumeric="5"/>
+            <column name="comentario" value="Increíble calidad, volvería a comprar"/>
+            <column name="fecha" valueDate="2026-06-13"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

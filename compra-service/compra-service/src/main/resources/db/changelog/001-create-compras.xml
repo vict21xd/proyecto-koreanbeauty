@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+    http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+<changeSet id="1" author="auto">
+
+    <createTable tableName="compras">
+
+        <column name="id" type="BIGINT" autoIncrement="true">
+            <constraints primaryKey="true"/>
+        </column>
+
+        <column name="id_cliente" type="BIGINT"/>
+        <column name="total" type="DOUBLE"/>
+        <column name="fecha_compra" type="DATETIME"/>
+
+    </createTable>
+
+    <createTable tableName="detalle_compras">
+
+        <column name="id" type="BIGINT" autoIncrement="true">
+            <constraints primaryKey="true"/>
+        </column>
+
+        <column name="compra_id" type="BIGINT"/>
+        <column name="id_producto" type="BIGINT"/>
+        <column name="cantidad" type="INT"/>
+        <column name="precio_unitario" type="DOUBLE"/>
+        <column name="subtotal" type="DOUBLE"/>
+
+    </createTable>
+
+    <addForeignKeyConstraint
+        baseTableName="detalle_compras"
+        baseColumnNames="compra_id"
+        referencedTableName="compras"
+        referencedColumnNames="id"
+        constraintName="fk_detalle_compra"/>
+
+</changeSet>
+
+</databaseChangeLog>

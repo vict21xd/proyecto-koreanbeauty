@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="2-insert-inventario" author="dev">
+
+        <insert tableName="inventario">
+            <column name="id_producto" valueNumeric="1"/>
+            <column name="stock" valueNumeric="50"/>
+            <column name="ubicacion" value="Bodega A"/>
+            <column name="fecha_actualizacion" valueDate="2026-01-01"/>
+        </insert>
+
+        <insert tableName="inventario">
+            <column name="id_producto" valueNumeric="2"/>
+            <column name="stock" valueNumeric="30"/>
+            <column name="ubicacion" value="Bodega A"/>
+            <column name="fecha_actualizacion" valueDate="2026-01-01"/>
+        </insert>
+
+        <insert tableName="inventario">
+            <column name="id_producto" valueNumeric="3"/>
+            <column name="stock" valueNumeric="40"/>
+            <column name="ubicacion" value="Bodega B"/>
+            <column name="fecha_actualizacion" valueDate="2026-01-01"/>
+        </insert>
+
+        <insert tableName="inventario">
+            <column name="id_producto" valueNumeric="4"/>
+            <column name="stock" valueNumeric="25"/>
+            <column name="ubicacion" value="Bodega B"/>
+            <column name="fecha_actualizacion" valueDate="2026-01-01"/>
+        </insert>
+
+        <insert tableName="inventario">
+            <column name="id_producto" valueNumeric="5"/>
+            <column name="stock" valueNumeric="60"/>
+            <column name="ubicacion" value="Bodega C"/>
+            <column name="fecha_actualizacion" valueDate="2026-01-01"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

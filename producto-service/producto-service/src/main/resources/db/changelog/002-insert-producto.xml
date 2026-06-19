@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="insert-1" author="auto">
+        <insert tableName="productos">
+            <column name="nombre" value="Tonico Calmante 77%"/>
+            <column name="descripcion" value="Tonico calmante para piel sensible"/>
+            <column name="precio" valueNumeric="22000"/>
+            <column name="stock" valueNumeric="25"/>
+            <column name="categoria" value="Skincare"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-2" author="auto">
+        <insert tableName="productos">
+            <column name="nombre" value="Protector Solar de Arroz"/>
+            <column name="descripcion" value="Protector solar hidratante con arroz"/>
+            <column name="precio" valueNumeric="18000"/>
+            <column name="stock" valueNumeric="30"/>
+            <column name="categoria" value="Skincare"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-3" author="auto">
+        <insert tableName="productos">
+            <column name="nombre" value="Esencia de Mucina de Caracol 96"/>
+            <column name="descripcion" value="Esencia regeneradora y reparadora"/>
+            <column name="precio" valueNumeric="25000"/>
+            <column name="stock" valueNumeric="18"/>
+            <column name="categoria" value="Skincare"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-4" author="auto">
+        <insert tableName="productos">
+            <column name="nombre" value="Crema Reparadora Atobarrier 365"/>
+            <column name="descripcion" value="Crema intensiva para barrera cutanea"/>
+            <column name="precio" valueNumeric="38100"/>
+            <column name="stock" valueNumeric="12"/>
+            <column name="categoria" value="Skincare"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-5" author="auto">
+        <insert tableName="productos">
+            <column name="nombre" value="Protector Solar de Jugo de Abedul"/>
+            <column name="descripcion" value="Protector solar calmante y ligero"/>
+            <column name="precio" valueNumeric="20100"/>
+            <column name="stock" valueNumeric="22"/>
+            <column name="categoria" value="Skincare"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-6" author="auto">
+        <insert tableName="productos">
+            <column name="nombre" value="Almohadillas Zero Poros"/>
+            <column name="descripcion" value="Pads exfoliantes para minimizar poros"/>
+            <column name="precio" valueNumeric="27200"/>
+            <column name="stock" valueNumeric="14"/>
+            <column name="categoria" value="Skincare"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-7" author="auto">
+        <insert tableName="productos">
+            <column name="nombre" value="Ampolla de Centella Asiatica"/>
+            <column name="descripcion" value="Ampolla calmante y reparadora"/>
+            <column name="precio" valueNumeric="19500"/>
+            <column name="stock" valueNumeric="28"/>
+            <column name="categoria" value="Skincare"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-8" author="auto">
+        <insert tableName="productos">
+            <column name="nombre" value="Refinador de Piel con Ceramidas"/>
+            <column name="descripcion" value="Refinador nutritivo con ceramidas"/>
+            <column name="precio" valueNumeric="33900"/>
+            <column name="stock" valueNumeric="10"/>
+            <column name="categoria" value="Skincare"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-9" author="auto">
+        <insert tableName="productos">
+            <column name="nombre" value="Esencia Exfoliante de Frijol"/>
+            <column name="descripcion" value="Esencia exfoliante suave"/>
+            <column name="precio" valueNumeric="15400"/>
+            <column name="stock" valueNumeric="16"/>
+            <column name="categoria" value="Skincare"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-10" author="auto">
+        <insert tableName="productos">
+            <column name="nombre" value="Serum de Acido Hialuronico"/>
+            <column name="descripcion" value="Serum hidratante de larga duracion"/>
+            <column name="precio" valueNumeric="14800"/>
+            <column name="stock" valueNumeric="35"/>
+            <column name="categoria" value="Skincare"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

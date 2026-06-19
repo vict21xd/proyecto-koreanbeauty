@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+    http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+<changeSet id="2" author="auto">
+
+    <!-- COMPRAS (10 REGISTROS) -->
+   
+
+    <insert tableName="compras">
+        <column name="id_cliente" valueNumeric="1"/>
+        <column name="total" valueNumeric="100.0"/>
+        <column name="fecha_compra" valueDate="2024-01-10 10:00:00"/>
+    </insert>
+
+    <insert tableName="compras">
+        <column name="id_cliente" valueNumeric="2"/>
+        <column name="total" valueNumeric="200.0"/>
+        <column name="fecha_compra" valueDate="2024-02-12 12:00:00"/>
+    </insert>
+
+    <insert tableName="compras">
+        <column name="id_cliente" valueNumeric="3"/>
+        <column name="total" valueNumeric="150.0"/>
+        <column name="fecha_compra" valueDate="2024-03-15 15:30:00"/>
+    </insert>
+
+    <insert tableName="compras">
+        <column name="id_cliente" valueNumeric="1"/>
+        <column name="total" valueNumeric="75.0"/>
+        <column name="fecha_compra" valueDate="2024-04-20 09:20:00"/>
+    </insert>
+
+    <insert tableName="compras">
+        <column name="id_cliente" valueNumeric="4"/>
+        <column name="total" valueNumeric="300.0"/>
+        <column name="fecha_compra" valueDate="2024-05-05 18:45:00"/>
+    </insert>
+
+    <insert tableName="compras">
+        <column name="id_cliente" valueNumeric="5"/>
+        <column name="total" valueNumeric="120.0"/>
+        <column name="fecha_compra" valueDate="2024-06-01 11:00:00"/>
+    </insert>
+
+    <insert tableName="compras">
+        <column name="id_cliente" valueNumeric="6"/>
+        <column name="total" valueNumeric="220.0"/>
+        <column name="fecha_compra" valueDate="2024-06-10 14:30:00"/>
+    </insert>
+
+    <insert tableName="compras">
+        <column name="id_cliente" valueNumeric="7"/>
+        <column name="total" valueNumeric="180.0"/>
+        <column name="fecha_compra" valueDate="2024-06-15 16:00:00"/>
+    </insert>
+
+    <insert tableName="compras">
+        <column name="id_cliente" valueNumeric="8"/>
+        <column name="total" valueNumeric="90.0"/>
+        <column name="fecha_compra" valueDate="2024-06-20 10:10:00"/>
+    </insert>
+
+    <insert tableName="compras">
+        <column name="id_cliente" valueNumeric="9"/>
+        <column name="total" valueNumeric="250.0"/>
+        <column name="fecha_compra" valueDate="2024-06-25 19:00:00"/>
+    </insert>
+
+    <!-- DETALLE COMPRAS (10 REG)   -->
+
+
+    <insert tableName="detalle_compras">
+        <column name="compra_id" valueNumeric="1"/>
+        <column name="id_producto" valueNumeric="1"/>
+        <column name="cantidad" valueNumeric="1"/>
+        <column name="precio_unitario" valueNumeric="100.0"/>
+        <column name="subtotal" valueNumeric="100.0"/>
+    </insert>
+
+    <insert tableName="detalle_compras">
+        <column name="compra_id" valueNumeric="2"/>
+        <column name="id_producto" valueNumeric="2"/>
+        <column name="cantidad" valueNumeric="2"/>
+        <column name="precio_unitario" valueNumeric="100.0"/>
+        <column name="subtotal" valueNumeric="200.0"/>
+    </insert>
+
+    <insert tableName="detalle_compras">
+        <column name="compra_id" valueNumeric="3"/>
+        <column name="id_producto" valueNumeric="3"/>
+        <column name="cantidad" valueNumeric="1"/>
+        <column name="precio_unitario" valueNumeric="150.0"/>
+        <column name="subtotal" valueNumeric="150.0"/>
+    </insert>
+
+    <insert tableName="detalle_compras">
+        <column name="compra_id" valueNumeric="4"/>
+        <column name="id_producto" valueNumeric="4"/>
+        <column name="cantidad" valueNumeric="3"/>
+        <column name="precio_unitario" valueNumeric="25.0"/>
+        <column name="subtotal" valueNumeric="75.0"/>
+    </insert>
+
+    <insert tableName="detalle_compras">
+        <column name="compra_id" valueNumeric="5"/>
+        <column name="id_producto" valueNumeric="5"/>
+        <column name="cantidad" valueNumeric="3"/>
+        <column name="precio_unitario" valueNumeric="100.0"/>
+        <column name="subtotal" valueNumeric="300.0"/>
+    </insert>
+
+    <insert tableName="detalle_compras">
+        <column name="compra_id" valueNumeric="6"/>
+        <column name="id_producto" valueNumeric="1"/>
+        <column name="cantidad" valueNumeric="2"/>
+        <column name="precio_unitario" valueNumeric="100.0"/>
+        <column name="subtotal" valueNumeric="200.0"/>
+    </insert>
+
+    <insert tableName="detalle_compras">
+        <column name="compra_id" valueNumeric="7"/>
+        <column name="id_producto" valueNumeric="2"/>
+        <column name="cantidad" valueNumeric="1"/>
+        <column name="precio_unitario" valueNumeric="100.0"/>
+        <column name="subtotal" valueNumeric="100.0"/>
+    </insert>
+
+    <insert tableName="detalle_compras">
+        <column name="compra_id" valueNumeric="8"/>
+        <column name="id_producto" valueNumeric="3"/>
+        <column name="cantidad" valueNumeric="2"/>
+        <column name="precio_unitario" valueNumeric="150.0"/>
+        <column name="subtotal" valueNumeric="300.0"/>
+    </insert>
+
+    <insert tableName="detalle_compras">
+        <column name="compra_id" valueNumeric="9"/>
+        <column name="id_producto" valueNumeric="4"/>
+        <column name="cantidad" valueNumeric="1"/>
+        <column name="precio_unitario" valueNumeric="90.0"/>
+        <column name="subtotal" valueNumeric="90.0"/>
+    </insert>
+
+    <insert tableName="detalle_compras">
+        <column name="compra_id" valueNumeric="10"/>
+        <column name="id_producto" valueNumeric="5"/>
+        <column name="cantidad" valueNumeric="2"/>
+        <column name="precio_unitario" valueNumeric="125.0"/>
+        <column name="subtotal" valueNumeric="250.0"/>
+    </insert>
+
+</changeSet>
+
+</databaseChangeLog>

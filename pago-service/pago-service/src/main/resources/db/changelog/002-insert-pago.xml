@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="2-insert-pago" author="dev">
+
+        <insert tableName="pago">
+            <column name="id_compra" valueNumeric="1"/>
+            <column name="monto" valueNumeric="120.50"/>
+            <column name="metodo_pago" value="TARJETA"/>
+            <column name="estado" value="PAGADO"/>
+            <column name="fecha_pago" valueComputed="CURRENT_DATE"/>
+        </insert>
+
+        <insert tableName="pago">
+            <column name="id_compra" valueNumeric="2"/>
+            <column name="monto" valueNumeric="89.99"/>
+            <column name="metodo_pago" value="PAYPAL"/>
+            <column name="estado" value="PENDIENTE"/>
+            <column name="fecha_pago" valueComputed="CURRENT_DATE"/>
+        </insert>
+
+        <insert tableName="pago">
+            <column name="id_compra" valueNumeric="3"/>
+            <column name="monto" valueNumeric="45.00"/>
+            <column name="metodo_pago" value="EFECTIVO"/>
+            <column name="estado" value="PAGADO"/>
+            <column name="fecha_pago" valueComputed="CURRENT_DATE"/>
+        </insert>
+
+        <insert tableName="pago">
+            <column name="id_compra" valueNumeric="4"/>
+            <column name="monto" valueNumeric="200.00"/>
+            <column name="metodo_pago" value="TARJETA"/>
+            <column name="estado" value="PAGADO"/>
+            <column name="fecha_pago" valueComputed="CURRENT_DATE"/>
+        </insert>
+
+        <insert tableName="pago">
+            <column name="id_compra" valueNumeric="5"/>
+            <column name="monto" valueNumeric="15.99"/>
+            <column name="metodo_pago" value="PAYPAL"/>
+            <column name="estado" value="CANCELADO"/>
+            <column name="fecha_pago" valueComputed="CURRENT_DATE"/>
+        </insert>
+
+        <insert tableName="pago">
+            <column name="id_compra" valueNumeric="6"/>
+            <column name="monto" valueNumeric="99.90"/>
+            <column name="metodo_pago" value="TARJETA"/>
+            <column name="estado" value="PAGADO"/>
+            <column name="fecha_pago" valueComputed="CURRENT_DATE"/>
+        </insert>
+
+        <insert tableName="pago">
+            <column name="id_compra" valueNumeric="7"/>
+            <column name="monto" valueNumeric="300.00"/>
+            <column name="metodo_pago" value="EFECTIVO"/>
+            <column name="estado" value="PAGADO"/>
+            <column name="fecha_pago" valueComputed="CURRENT_DATE"/>
+        </insert>
+
+        <insert tableName="pago">
+            <column name="id_compra" valueNumeric="8"/>
+            <column name="monto" valueNumeric="75.25"/>
+            <column name="metodo_pago" value="PAYPAL"/>
+            <column name="estado" value="PENDIENTE"/>
+            <column name="fecha_pago" valueComputed="CURRENT_DATE"/>
+        </insert>
+
+        <insert tableName="pago">
+            <column name="id_compra" valueNumeric="9"/>
+            <column name="monto" valueNumeric="180.00"/>
+            <column name="metodo_pago" value="TARJETA"/>
+            <column name="estado" value="PAGADO"/>
+            <column name="fecha_pago" valueComputed="CURRENT_DATE"/>
+        </insert>
+
+        <insert tableName="pago">
+            <column name="id_compra" valueNumeric="10"/>
+            <column name="monto" valueNumeric="60.00"/>
+            <column name="metodo_pago" value="EFECTIVO"/>
+            <column name="estado" value="PAGADO"/>
+            <column name="fecha_pago" valueComputed="CURRENT_DATE"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+ xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="
+ http://www.liquibase.org/xml/ns/dbchangelog
+ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+<changeSet id="2" author="auto">
+
+    <insert tableName="users">
+        <column name="email" value="admin1@"/>
+        <column name="password" value="1234"/>
+        <column name="role" value="ADMIN"/>
+    </insert>
+
+    <insert tableName="users">
+        <column name="email" value="vale@gmail"/>
+        <column name="password" value="2348g"/>
+        <column name="role" value="CLIENTE"/>
+    </insert>
+
+    <insert tableName="users">
+        <column name="email" value="carlos@123"/>
+        <column name="password" value="hola555"/>
+        <column name="role" value="CLIENTE"/>
+    </insert>
+
+    <insert tableName="users">
+        <column name="email" value="muna@22"/>
+        <column name="password" value="aloku"/>
+        <column name="role" value="CLIENTE"/>
+    </insert>
+
+    <insert tableName="users">
+        <column name="email" value="rojas@doc"/>
+        <column name="password" value="22222"/>
+        <column name="role" value="CLIENTE"/>
+    </insert>
+
+    <insert tableName="users">
+        <column name="email" value="marxos@ww"/>
+        <column name="password" value="0098n"/>
+        <column name="role" value="CLIENTE"/>
+    </insert>
+
+    <insert tableName="users">
+        <column name="email" value="abarzua@5"/>
+        <column name="password" value="abar12"/>
+        <column name="role" value="CLIENTE"/>
+    </insert>
+
+    <insert tableName="users">
+        <column name="email" value="carlos7@"/>
+        <column name="password" value="2222"/>
+        <column name="role" value="CLIENTE"/>
+    </insert>
+
+    <insert tableName="users">
+        <column name="email" value="elen@aa"/>
+        <column name="password" value="1111"/>
+        <column name="role" value="CLIENTE"/>
+    </insert>
+
+    <insert tableName="users">
+        <column name="email" value="helf@ss"/>
+        <column name="password" value="bo123"/>
+        <column name="role" value="CLIENTE"/>
+    </insert>
+
+    <insert tableName="users">
+        <column name="email" value="estudio@gmail.com"/>
+        <column name="password" value="5555"/>
+        <column name="role" value="ADMIN"/>
+    </insert>
+
+</changeSet>
+
+</databaseChangeLog>

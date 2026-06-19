@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="2" author="dev">
+
+        <insert tableName="clientes">
+            <column name="nombre" value="Juan"/>
+            <column name="correo" value="juan@test.com"/>
+            <column name="telefono" value="111"/>
+            <column name="tipo_piel" value="seca"/>
+        </insert>
+
+        <insert tableName="clientes">
+            <column name="nombre" value="Maria"/>
+            <column name="correo" value="maria@test.com"/>
+            <column name="telefono" value="222"/>
+            <column name="tipo_piel" value="grasa"/>
+        </insert>
+
+        <insert tableName="clientes">
+            <column name="nombre" value="Pedro"/>
+            <column name="correo" value="pedro@test.com"/>
+            <column name="telefono" value="333"/>
+            <column name="tipo_piel" value="mixta"/>
+        </insert>
+
+        <insert tableName="clientes">
+            <column name="nombre" value="Ana"/>
+            <column name="correo" value="ana@test.com"/>
+            <column name="telefono" value="444"/>
+            <column name="tipo_piel" value="seca"/>
+        </insert>
+
+        <insert tableName="clientes">
+            <column name="nombre" value="Luis"/>
+            <column name="correo" value="luis@test.com"/>
+            <column name="telefono" value="555"/>
+            <column name="tipo_piel" value="grasa"/>
+        </insert>
+
+        <insert tableName="clientes">
+            <column name="nombre" value="Carla"/>
+            <column name="correo" value="carla@test.com"/>
+            <column name="telefono" value="666"/>
+            <column name="tipo_piel" value="seca"/>
+        </insert>
+
+        <insert tableName="clientes">
+            <column name="nombre" value="Diego"/>
+            <column name="correo" value="diego@test.com"/>
+            <column name="telefono" value="777"/>
+            <column name="tipo_piel" value="mixta"/>
+        </insert>
+
+        <insert tableName="clientes">
+            <column name="nombre" value="Sofía"/>
+            <column name="correo" value="sofia@test.com"/>
+            <column name="telefono" value="888"/>
+            <column name="tipo_piel" value="grasa"/>
+        </insert>
+
+        <insert tableName="clientes">
+            <column name="nombre" value="Tomás"/>
+            <column name="correo" value="tomas@test.com"/>
+            <column name="telefono" value="999"/>
+            <column name="tipo_piel" value="seca"/>
+        </insert>
+
+        <insert tableName="clientes">
+            <column name="nombre" value="Valentina"/>
+            <column name="correo" value="vale@test.com"/>
+            <column name="telefono" value="1010"/>
+            <column name="tipo_piel" value="mixta"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

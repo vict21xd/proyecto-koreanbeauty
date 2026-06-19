@@ -1,0 +1,6 @@
+package com.example.cliente_service.service;
+
+public class JwtService {
+
+}
+
