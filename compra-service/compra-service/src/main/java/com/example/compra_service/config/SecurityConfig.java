@@ -10,6 +10,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import com.example.compra_service.security.JwtAuthenticationFilter;
 import com.example.compra_service.service.JwtService;
+import org.springframework.web.reactive.function.client.WebClientRequestException;
 @Configuration
 public class SecurityConfig{
      

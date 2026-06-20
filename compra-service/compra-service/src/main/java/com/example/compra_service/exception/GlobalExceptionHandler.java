@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import org.springframework.web.reactive.function.client.WebClientRequestException;                      
-
+import org.springframework.web.reactive.function.client.WebClientResponseException;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
